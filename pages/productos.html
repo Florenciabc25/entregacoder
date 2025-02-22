@@ -3,75 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-
-     <!--link bt-->
-
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
- <!--link de css -->
-
-   <link rel="stylesheet" href="../css/main.css">
-
+    <title>Productos - Novel</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="productos-page">
-    >
-    <!-- Encabezado de la página -->
+    
+    <!-- Encabezado -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#"></a>
-                <img src="../img/novel-cinco.png" alt="">
+                <a class="navbar-brand" href="../index.html"><img src="../img/novel-cinco.png" alt="Logo" width="150"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  
-                  <!--lista desordenada-->
-                  
-                  <ul class="navbar-nav ms-auto">
-            
-                    <li class="nav-item"><a class="nav-link" href="Nuestros-clientes.html">Nuestros clientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-    
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Nuestros-clientes.html">Nuestros Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
 
-<div class="contenedor">
-    <div>
-        <div class="caja">AIR FORCE</div>
-        <img src="../img/air-force.png" alt="Air Force">
-        <a href="detalle.html" class="btn btn-primary">Ver más</a>
+    <!-- Título de sección -->
+    <section class="container text-center my-5">
+        <h1 class="display-4">Nuestros Productos</h1>
+        <p class="lead">Descubre nuestra colección exclusiva de calzado</p>
+    </section>
 
+    <!-- Galería de productos -->
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="../img/air-force.png" class="card-img-top" alt="Air Force">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Air Force</h5>
+                        <p class="card-text">Un diseño clásico con estilo y comodidad.</p>
+                        <a href="detalle.html" class="btn btn-dark">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="../img/nike-jordan.png" class="card-img-top" alt="Jordan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jordan</h5>
+                        <p class="card-text">Inspirado en el baloncesto, ideal para el día a día.</p>
+                        <a href="detalle.html" class="btn btn-dark">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="../img/nike-shadow.png" class="card-img-top" alt="Shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Shadow</h5>
+                        <p class="card-text">Modernidad y ligereza para un look urbano.</p>
+                        <a href="detalle.html" class="btn btn-dark">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <div class="caja">JORDAN</div>
-        <img src="../img/nike-jordan.png" alt="Jordan">
-        <a href="detalle.html" class="btn btn-primary">Ver más</a>
-    </div>
-
-    <div>
-        <div class="caja">SHADOW</div>
-        <img src="../img/nike-shadow.png" alt="Shadow">
-        <a href="detalle.html" class="btn btn-primary">Ver más</a>
-    </div>
-
-</div>
-
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center p-3 mt-4">
-        <p>&copy; 2024 Tienda. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Novel. Todos los derechos reservados.</p>
     </footer>
-
-    <!--js-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
