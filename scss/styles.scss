@@ -1,0 +1,20 @@
+// 📂 scss/styles.scss
+@use "variables";
+@use "mixins";
+@use "global";
+@use "navbar";
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.boton {
+    @include mixins.boton-estilizado(variables.$color-primario);
+}
+
+.boton-secundario {
+    @extend .boton;
+    background-color: variables.$color-secundario;
+}

@@ -1,0 +1,22 @@
+// 📂 scss/_navbar.scss
+@use "variables" as *;
+
+.navbar {
+    background-color: $color-primario;
+    padding: 15px;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 0 15px;
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

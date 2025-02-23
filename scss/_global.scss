@@ -1,0 +1,8 @@
+// 📂 scss/_global.scss
+@use "variables" as *;
+
+body {
+    font-family: $fuente-principal;
+    background-color: #f4f4f4;
+    color: #333;
+}
