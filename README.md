@@ -15,7 +15,8 @@ Proyecto final para Coderhouse con HTML, SASS, Bootstrap y optimización SEO.
 ✔️ Optimización SEO
 
 ## 🔗 Demo en Vivo
-[Ver proyecto](https://florenciabc25.github.io/entregacoder/index.html)
+- [GitHub Pages](https://florenciabc25.github.io/entregacoder/index.html)
+- [Netlify](https://velvety-macaron-0151c6.netlify.app/)
 
 ## 📂 Acceso a los Archivos
 Puedes ver el código fuente en GitHub:
