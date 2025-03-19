@@ -11,19 +11,14 @@
       rel="stylesheet"
     />
 
-    <!-- Enlace al archivo de reset -->
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- Estilos en SASS (compilado en CSS) -->
+    <link rel="stylesheet" href="../scss/styles.scss" />
 
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../css/main.css" />
-
-    <!-- link iconos de FontAwesome -->
+    <!-- Iconos de FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-
-    <link rel="stylesheet" href="css/styles.css" />
 
     <meta
       name="description"
@@ -36,10 +31,11 @@
   </head>
 
   <body>
-    <!-- Encabezado -->
+    <!-- Encabezado con barra de navegación -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
+          <!-- Logo -->
           <a class="navbar-brand" href="../index.html">
             <img
               src="../img/novel-cinco.png"
@@ -48,6 +44,7 @@
               width="150"
             />
           </a>
+          <!-- Botón de menú en móviles -->
           <button
             class="navbar-toggler"
             type="button"
@@ -56,23 +53,14 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Menú de navegación -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Nuestros-clientes.html">Nuestros Clientes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="Nuestros-clientes.html">Nuestros Clientes</a></li>
+              <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
           </div>
         </div>
@@ -81,53 +69,38 @@
 
     <!-- Sección de Contacto -->
     <section class="container py-5">
-      <h1 class="contact-title">Contáctanos</h1>
-      <div class="row">
-        <div class="col-md-6 mb-4">
+      <h1 class="contact-title text-center">Contáctanos</h1>
+
+      <!-- Contenedor con Grid para info y formulario -->
+      <div class="contact-container d-grid gap-4">
+        <!-- Información de Contacto -->
+        <div class="contact-info">
           <h3>Información de Contacto</h3>
           <p><strong>Dirección:</strong> Rivadavia 2856</p>
           <p><strong>Teléfono:</strong> (+54) 2236822162</p>
           <p><strong>Email:</strong> infonoveltrend@gmail.com</p>
           <h4>Síguenos en redes sociales</h4>
 
-          <div class="d-flex gap-3 justify-content-center">
-            <a href="#" class="btn btn-primary">
-              <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-            <a href="#" class="btn btn-info">
-              <i class="fab fa-twitter"></i> Twitter
-            </a>
-            <a href="#" class="btn btn-danger">
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
+          <!-- Botones de redes sociales -->
+          <div class="social-links d-flex justify-content-center gap-2">
+            <a href="#" class="btn btn-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-info"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-danger"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        <div class="col-md-6 mb-4 text-center">
+
+        <!-- Formulario de Contacto -->
+        <div class="contact-form text-center">
           <h3>Envíanos un mensaje</h3>
           <form>
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Tu nombre"
-                required
-              />
+              <input type="text" class="form-control" placeholder="Tu nombre" required />
             </div>
             <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Tu correo electrónico"
-                required
-              />
+              <input type="email" class="form-control" placeholder="Tu correo electrónico" required />
             </div>
             <div class="mb-3">
-              <textarea
-                class="form-control"
-                rows="4"
-                placeholder="Tu mensaje"
-                required
-              ></textarea>
+              <textarea class="form-control" rows="4" placeholder="Tu mensaje" required></textarea>
             </div>
             <button type="submit" class="btn btn-success w-100">Enviar</button>
           </form>

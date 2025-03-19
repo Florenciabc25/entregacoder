@@ -1,18 +1,21 @@
-// 📂 scss/_navbar.scss
-@use "variables" as *;
+@use "variables";
 
 .navbar {
-    background-color: $color-primario;
+    background-color: variables.$color-primario;
     padding: 15px;
+
     ul {
         list-style: none;
         display: flex;
         justify-content: center;
+
         li {
             margin: 0 15px;
+
             a {
-                color: white;
+                color: variables.$color-blanco;
                 text-decoration: none;
+
                 &:hover {
                     text-decoration: underline;
                 }
